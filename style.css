@@ -20,16 +20,12 @@ font-weight: bold;}
 legend{font-family: 'Merriweather', serif;
 color:#17213b;}
 
-input{background-color:lightgrey;transition: background-color 0.5s ease;}
-
-input:hover{background-color:darkgrey;}
-
-input::placeholder{color:darkgrey;}
-
-input:hover::placeholder{color:lightgrey;}
+input{background-color:lightgrey;
+  transition: background-color .35s ease-in-out;}
 
 input:focus{background-color:lightblue;}
 
+input::placeholder{color:darkgrey;}
 
 
 /**--MOBILE--**/
@@ -160,7 +156,7 @@ body{margin:auto;}
 
   label{font-size: .9em; margin-top:3.5%;}
 
-    input::placeholder {padding:70%;color:darkgrey;}
+  input::placeholder {padding:70%;color:darkgrey;}
 
 .name_lbl,.email_lbl,.phone_lbl,.address_lbl, .city_lbl, .state_lbl,.zip_lbl{display:flex; flex-direction: row;}
 
@@ -181,30 +177,5 @@ body{margin:auto;}
 #hformat{margin-right:-62%;}
 
 #pformat{margin-right:-62%;}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
