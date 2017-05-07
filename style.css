@@ -1,0 +1,210 @@
+/**--MAIN STYLE SHEET--**/
+
+body{background-color:#eaf7f9;}
+
+header{display:flex; flex-direction:
+  column;width:100%;
+  background-color:#3b3b47;
+  margin-top:-1.5%;
+  padding-top:2.5%;
+  padding-bottom:2%;}
+
+h1{font-family: 'Merriweather', serif;
+align-self: center;
+color:white;}
+
+h2,{font-family: 'Merriweather', serif;
+color:#17213b;
+font-weight: bold;}
+
+legend{font-family: 'Merriweather', serif;
+color:#17213b;}
+
+input{background-color:lightgrey;transition: background-color 0.5s ease;}
+
+input:hover{background-color:darkgrey;}
+
+input::placeholder{color:darkgrey;}
+
+input:hover::placeholder{color:lightgrey;}
+
+input:focus{background-color:lightblue;}
+
+
+
+/**--MOBILE--**/
+
+@media (min-width: 320px){
+
+body{width:100%; margin:0% 0% 0% 0%;}
+
+h1{font-size:1.25em;}
+
+h2{font-size: 1.25em;}
+
+.wrap{width:100%;}
+
+.intro{display:flex;
+flex-direction: column;
+padding-bottom:3%}
+
+.intro h2{align-self: center;margin-top:8%;margin-bottom:1%;}
+
+.intro p{font-family: 'Merriweather', serif;
+font-size:.75em; color:lightgrey;
+align-self: center;
+text-align: center;
+padding-right:1em;
+padding-left:1em;
+margin-top:0%;
+margin-bottom:8%;}
+
+.borders{padding-top:1%;
+  margin-left:5%;
+  margin-right:5%;
+  margin-bottom:8%;
+  border-top: 3px solid #17213b;
+  border-bottom:1px solid #17213b; }
+
+.border_too{margin-left:5%;
+margin-right:5%;
+margin-bottom:8%;
+border-bottom:2px solid #17213b;}
+
+  fieldset{border-style:none;}
+
+  legend{font-size:1.25em; margin-bottom:1em;}
+
+  label{font-family: 'Merriweather', serif;
+    color:darkgrey;
+    font-size:1em;
+  margin-bottom:.75em;}
+
+  input{max-width: 100%;
+    border-style:none;
+    font-size:1.25em;
+    padding-top:1em;
+    padding-bottom:1em;
+    margin-bottom:2em;
+    border-radius: 5px;}
+
+  input::placeholder {padding:70%;}
+
+  .name_lbl,.email_lbl,.phone_lbl,.address_lbl, .city_lbl, .state_lbl {display:flex;flex-direction: column;}
+
+  select{max-width: 100%;
+    background-color:lightgrey;
+    border-style:none;
+    color:darkgrey;
+    font-size:1em;
+    margin-bottom:2em;
+    border-radius: 5px;}
+
+  .zip_lbl{max-width: 50%;
+  display: flex;
+  flex-direction: column;}
+
+.secondary{font-family: 'Merriweather', serif;
+  color:darkgrey;
+  font-size:.75em;}
+
+textarea{width: 100%;
+  background-color:lightgrey;
+  border-style:none;
+  font-size:1.25em;
+  padding-top:1em;
+  padding-bottom:3em;
+  margin-bottom:2em;
+  border-radius: 5px;}
+
+button{width:100%;
+  background-color: teal;
+  color:white;
+  font-size:2em;
+  padding-top:1em;
+  padding-bottom:1em;
+  margin-bottom:1em;
+  border-radius: 5px;}
+
+.copyright{width: 100%; margin:auto;
+  color:darkgrey;font-size:1em;}
+
+.copyright h4{text-align: center;}
+
+}
+
+/*--DESKTOP--*/
+
+@media (min-width:768px) {
+
+
+
+body{margin:auto;}
+
+.wrap{margin:auto; max-width:60%; display:flex; flex-direction: column;}
+
+.borders{padding-top:1%;
+  margin-left:0%;
+  margin-right:0%;}
+
+.border_too{margin-left:0%;
+  margin-right:0%;}
+
+  .intro p{margin-top: 10%; margin-bottom:5%;}
+
+  .intro h2{align-self: center;margin-top:8%;margin-bottom:-6%;}
+
+  input{width:68%;margin-left: auto;  padding-top:.5em;
+    padding-bottom:.5em;
+    margin-bottom:1em;}
+
+  label{font-size: .9em; margin-top:3.5%;}
+
+    input::placeholder {padding:70%;color:darkgrey;}
+
+.name_lbl,.email_lbl,.phone_lbl,.address_lbl, .city_lbl, .state_lbl,.zip_lbl{display:flex; flex-direction: row;}
+
+#sel_menu{width:68%; display:flex; flex-direction: row; margin-left:auto;}
+
+#st_sel{margin-top:0;}
+
+#zipcode{margin-left:36%; margin-right:-40%;}
+
+#zpcd{margin-top: 7%;}
+
+#hnews{margin-right:-62%;}
+
+#csnews{margin-right:-62%;}
+
+#scnews{margin-right:-62%;}
+
+#hformat{margin-right:-62%;}
+
+#pformat{margin-right:-62%;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
