@@ -31,19 +31,19 @@
                 </div>
                 <div class="phone_lbl">
                     <label for="telephone">Phone Number</label>
-                    <input type="tel" id="telephone" name="user_telephone" required placeholder="Required">
+                    <input type="tel" id="telephone" name="user_telephone">
                 </div>
                 <div class="address_lbl">
                     <label for="address">Street Address</label>
-                    <input type="text" id="address" name="user_address" required placeholder="Required">
+                    <input type="text" id="address" name="user_address">
                 </div>
                 <div class="city_lbl">
                     <label for="city">City</label>
-                    <input type="text" id="city" name="user_city" required placeholder="Required">
+                    <input type="text" id="city" name="user_city">
                 </div>
                 <div class="state_lbl">
-                    <label for="state" id="st_sel">State</label>
-                    <select name="smenu" id="sel_menu" required="">
+                    <label for="sel_menu" id="st_sel">State</label>
+                    <select name="smenu" id="sel_menu">
         <option value="state" selected="selected">Choose State</option>
         <option value="AL">Alabama</option>
          <option value="AK">Alaska</option>
@@ -99,7 +99,7 @@
       </select></div>
                 <div class="zip_lbl">
                     <label for="zipcode" id="zpcd">Zipcode</label>
-                    <input type="text" id="zipcode" name="user_zipcode" required>
+                    <input type="text" id="zipcode" name="user_zipcode">
                 </div>
             </fieldset>
             <div class="border_too">
@@ -108,19 +108,24 @@
                 <legend>Newsletter:</legend>
                 <div class="secondary">
                     <h3> Select the newletters you would like to receive</h3>
-                    <input type="checkbox" name="newsHTML" value="HTML" id="hnews">HTML News<br>
-                    <input type="checkbox" name="newsCSS" value="CSS" id="csnews">CSS News<br>
-                    <input type="checkbox" name="newsJS" value="JScript" id="scnews">Javascript News<br>
+                    <div class="chk_HMTL">
+                        <input type="checkbox" name="newsHTML" value="HTML" id="hnews"><label for="hnews" id="html_news">HTML News</label></div>
+                    <div class="chk_CSS">
+                        <input type="checkbox" name="newsCSS" value="CSS" id="csnews"><label for="csnews" id="css_news">CSS News</label></div>
+                    <div class="chk_JS">
+                        <input type="checkbox" name="newsJS" value="JScript" id="scnews"><label for="scnews" id="js_news">Javascript News</label></div>
                     <h3>News Letter Format</h3>
-                    <input type="radio" name="format" value="htmld" id="hformat">HTML<br>
-                    <input type="radio" name="format" value="plaind" id="pformat">Plain Text<br>
+                    <div class="rad_HTML"><input type="radio" name="format" value="htmld" id="hformat"><label for="hformat" id="html_nl">HTML</label></div>
+                    <div class="rad_Plain"><input type="radio" name="format" value="plaind" id="pformat"><label for="pformat" id="pt_lab">Plain Text</label></div>
                     <h3>Other topics you would like to talk about.</h3>
                     <textarea id="info" name="user_info"></textarea>
-                    <button type="submit" id="sub">Sign Up</button></fieldset>
-                  </div> </form>
-            <div class="copyright">
-                <h4>Copyright The Code Review</h4>
-            </div>
+                    <button type="submit" id="sub">Sign Up</button></div>
+            </fieldset>
+    </div>
+    </form>
+    <div class="copyright">
+        <h4>Copyright The Code Review</h4>
+    </div>
 
 
 

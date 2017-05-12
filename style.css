@@ -13,7 +13,7 @@ h1{font-family: 'Merriweather', serif;
 align-self: center;
 color:white;}
 
-h2,{font-family: 'Merriweather', serif;
+h2 {font-family: 'Merriweather', serif;
 color:#17213b;
 font-weight: bold;}
 
@@ -26,6 +26,13 @@ input{background-color:lightgrey;
 input:focus{background-color:lightblue;}
 
 input::placeholder{color:darkgrey;}
+
+textarea{background-color:lightgrey;
+  transition: background-color .35s ease-in-out;}
+
+textarea:focus{background-color:white;}
+
+.chk_HTML, .chk_CSS, .chk_JS,.rad_HTML,.rad_Plain{display:inline-block; width:50%;}
 
 
 /**--MOBILE--**/
@@ -127,11 +134,13 @@ button{width:100%;
 
 .copyright h4{text-align: center;}
 
+#html_news,#css_news,#js_news,#html_nl,#pt_lab{margin-left: 1%;}
+
 }
 
-/*--DESKTOP--*/
+/*--IPAD-&-DESKTOP--*/
 
-@media (min-width:768px) {
+@media (min-width:768px) and (max-width:1024px) {
 
 
 
@@ -177,5 +186,19 @@ body{margin:auto;}
 #hformat{margin-right:-62%;}
 
 #pformat{margin-right:-62%;}
+
+#html_news{margin-left:-1%;}
+
+#css_news,#js_news,#html_nl,#pt_lab{margin-left:4%;}
+
+}
+
+/*--DESKTOP--*/
+
+@media (min-width:1024px){
+
+#zipcode{margin-left:45%; margin-right:-40%;}
+
+
 
 }
