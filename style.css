@@ -34,10 +34,10 @@ textarea:focus{background-color:white;}
 
 .chk_HTML, .chk_CSS, .chk_JS,.rad_HTML,.rad_Plain{display:inline-block; width:50%;}
 
+.textbox{display:inline-block;margin-top:5%;}
 
-/**--MOBILE--**/
+textarea{margin-top:5%;}
 
-@media (min-width: 320px){
 
 body{width:100%; margin:0% 0% 0% 0%;}
 
@@ -136,13 +136,13 @@ button{width:100%;
 
 #html_news,#css_news,#js_news,#html_nl,#pt_lab{margin-left: 1%;}
 
-}
+#txtlbl{font-size: 1.25em;}
+
+
 
 /*--IPAD-&-DESKTOP--*/
 
-@media (min-width:768px) and (max-width:1024px) {
-
-
+@media (min-width:768px) {
 
 body{margin:auto;}
 
@@ -193,12 +193,26 @@ body{margin:auto;}
 
 }
 
-/*--DESKTOP--*/
+/*--DESKTOP-1024--*/
 
 @media (min-width:1024px){
 
-#zipcode{margin-left:45%; margin-right:-40%;}
+.wrap{width: 45%; margin:auto;}
 
+}
 
+/*--DESKTOP-1280--*/
+
+@media (min-width:1280px){
+
+.wrap{width: 35%; margin:auto;}
+
+}
+
+/*--DESKTOP-1280--*/
+
+@media (min-width:1336px){
+
+.wrap{width: 33%; margin:auto;}
 
 }
